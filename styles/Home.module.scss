@@ -1,35 +1,107 @@
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
-    form{
+    form {
         width: 500px;
         margin-right: 1rem;
         text-align: center;
 
-        input,textarea{
+        input,
+        textarea {
             width: 100%;
             padding: 1rem;
             margin: 0.5rem 0;
-            border: 1px solid rgb(255, 253, 253);
+            border: 1px solid rgb(199, 124, 124);
             border-radius: 0.3rem;
         }
-        textarea{
+
+        textarea {
             resize: none;
         }
 
-        button{
+        button {
             padding: 0.8rem;
             width: 40%;
             background-color: rgb(4, 81, 247);
             border-radius: 0.5rem;
             cursor: pointer;
             transition: filter 0.2s;
-            &:hover{
+
+            &:hover {
                 filter: brightness(0.9);
             }
         }
     }
+
+    .caixacontatos {
+        width: 500px;
+        padding: 1rem;
+        background: rgb(4, 81, 247);
+        height: 500px;
+        text-align: center;
+        border-radius: 0.8rem;
+        margin-left: 5rem;
+        overflow: auto;
+
+        input{
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 0.1rem 1rem;
+        font-weight: bold;
+        }
+
+    }
+
+    .caixaUnico {
+        background: rgb(173, 173, 173);
+        border-radius: 0.5rem;
+        text-align: left;
+        max-height: 200px;
+        box-sizing: content-box;
+        margin-top: 1rem;
+
+        .dados{
+            p{
+                margin: 0;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .nomeTitulo {
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 0.1rem 1rem;
+        margin: 0.5rem;
+        font-weight: bold;
+    }
+
+    .boxTitulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+      
+
+    }
+
+    div{
+        margin-left: 1rem;
+    }
+
+
+    a {
+        color: red;
+        cursor: pointer;
+        margin-left: 0.5rem;
+
+        &hover {
+            font-weight: bold;
+        }
+    }
+
+
 }
